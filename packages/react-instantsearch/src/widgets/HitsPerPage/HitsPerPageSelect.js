@@ -3,6 +3,7 @@ import React, {PropTypes, Component} from 'react';
 import themeable from '../../core/themeable';
 
 import Select from '../../components/Select';
+import theme from './HitsPerPageSelect.css';
 
 class HitsPerPageSelect extends Component {
   static propTypes = {
@@ -54,6 +55,4 @@ class HitsPerPageSelect extends Component {
   }
 }
 
-export default themeable({
-  root: 'HitsPerPageSelect',
-})(HitsPerPageSelect);
+export default themeable(theme)(HitsPerPageSelect);
